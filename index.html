@@ -8,24 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="jquery.min.js"></script>
-    <script src="jquery.serialize-object.min.js"></script>
-    <script type="text/javascript">
-        var $form = $('#email-form'),
-            url = 'https://script.google.com/a/sas.upenn.edu/macros/s/AKfycbxC_lYGqhirgrB1k6jX_NWYHrHP7OBuQ_1vlZxjIfcOFmV5xHoX/exec'
-
-        $('input#submit-form').on('click', function (e) {
-            e.preventDefault();
-            var jqxhr = $.ajax({
-                url: url,
-                method: "GET",
-                dataType: "json",
-                data: $form.serializeObject(),
-            }).success(
-                document.getElementById('submit-form').value = "Thanks!";
-            );
-        })
-    </script>
+    <link rel="shortcut icon" type="image/png" href="./img/"/>
+    <link rel="shortcut icon" type="image/png" href="http://eg.com/favicon.png"/>
 <!-- https://script.google.com/macros/u/0/s/AKfycbx5t9onTFWeLw6VHBPVKxtMgSDMY3_xF3KaNSTyGhrUv_MdhQzd/exec -->
     <!--<script>
         function postEmailToGoogle() {
